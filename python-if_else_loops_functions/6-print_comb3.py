@@ -8,6 +8,6 @@ while a != 9:
     else:
         print("")
     if b == 9:
-        a+=1
-        b = b -(b - a)
-    b+=1
+        a += 1
+        b = b - (b - a)
+    b += 1
