@@ -6,6 +6,6 @@ if __name__ == "__main__":
     if lengArg <= 1:
         print("0 arguments.")
     else:
-        print(f"{lengArg - 1} argument:")
+        print(f"{lengArg - 1} argument: ")
     for item in range(1, lengArg):
         print(f"{item}: {sys.argv[item]}")
