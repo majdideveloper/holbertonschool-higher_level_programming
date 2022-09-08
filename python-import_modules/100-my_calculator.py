@@ -16,25 +16,14 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
 
-
     if valid == 0:
         print("{} + {} = {}".format(a, b, add(a, b)))
-
 
     if valid == 1:
         print("{} - {} = {}".format(a, b, sub(a, b)))
 
-
     if valid == 2:
         print("{} * {} = {}".format(a, b, mul(a, b)))
 
-
     if valid == 3:
         print("{} / {} = {}".format(a, b, div(a, b)))
-
-
-
-
-
-
-
