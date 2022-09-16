@@ -2,7 +2,6 @@
 def weight_average(my_list=[]):
     if my_list is None or len(my_list) == 0:
         return 0
-    print (my_list)
     sum_all_list = 0
     sum_div = 0
     for row in my_list:
