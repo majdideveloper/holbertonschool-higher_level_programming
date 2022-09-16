@@ -2,16 +2,15 @@
 def weight_average(my_list=[]):
     if my_list is None or len(my_list) == 0:
         return 0
+    print (my_list)
     sum_all_list = 0
     sum_div = 0
-    i = 1
     for row in my_list:
         list_tuple = list(row)
         sum_tuple = 1
-        for item in list_tuple:
-            if item == list_tuple[-1] and i != len(my_list):
-                sum_div += item
-            sum_tuple *= item
+        for index in range(len(list_tuple)):
+            if index == len(list_tuple) - 1 :
+                sum_div += list_tuple[index]
+            sum_tuple *= list_tuple[index]
         sum_all_list += sum_tuple
-        i += 1
     return (sum_all_list / sum_div)
