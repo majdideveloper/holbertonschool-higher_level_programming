@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
+    if my_list is None:
+        return 0
     sum_all_list = 0
     sum_div = 0
     for row in my_list:
