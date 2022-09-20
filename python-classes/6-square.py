@@ -38,13 +38,13 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
-        if self.__size == 0:
-            print()
-        for column in range(self.__size):
-            for space in range(int(self.__position[0])):
-                print(" ", end="")
-            for line in range(self.__size):
-                if line == self.__size - 1:
-                    print("#")
-                    break
-                print("#", end="")
+       """Print the square with the # character."""
+       if self.__size == 0:
+            print("")
+            return
+
+       [print("") for i in range(0, self.__position[1])]
+       for i in range(0, self.__size):
+            [print(" ", end="") for j in range(0, self.__position[0])]
+            [print("#", end="") for k in range(0, self.__size)]
+            print("")
