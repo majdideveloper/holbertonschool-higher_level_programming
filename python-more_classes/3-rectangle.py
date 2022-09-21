@@ -40,7 +40,7 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width + self.__height) * 2
-    
+
     def __str__(self):
         str = ""
         if (self.__height == 0) or (self.__width == 0):
@@ -51,7 +51,4 @@ class Rectangle:
                     str += "#"
                 if i < self.__height - 1:
                     str += "\n"
-            return (str) 
-        
-    
-
+            return (str)
