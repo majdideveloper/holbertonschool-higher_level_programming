@@ -52,7 +52,7 @@ class Rectangle:
         else:
             for i in range(self.__height):
                 for j in range(self.__width):
-                    if type(self.print_symbol) in [list, tuple, dict]:
+                    if type(self.print_symbol) in [list, tuple, dict, int]:
                         str += repr(self.print_symbol)
                     else:
                         str += self.print_symbol
