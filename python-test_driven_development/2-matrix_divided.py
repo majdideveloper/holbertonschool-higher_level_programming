@@ -18,5 +18,5 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    return [list(map(lambda item: abs(round(item / div, 2)), row))
+    return [list(map(lambda item: round(item / div, 2), row))
             for row in matrix]
