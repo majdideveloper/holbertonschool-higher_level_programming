@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
     if not isinstance(div, int) and not isinstance(div, float) :
         raise TypeError("div must be a number")
 
-    if div == 0:
+    if div == 0 or div == float('inf'):
         raise ZeroDivisionError("division by zero")
 
     return [list(map(lambda item: round(item / div, 2), row))
