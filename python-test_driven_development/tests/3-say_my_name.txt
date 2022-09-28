@@ -41,5 +41,5 @@ that value is equivalent to using the ``+`` operator.
 	
 	::
 
-		>>> say_my_name()
+		>>> say_my_name("")
 		 	
