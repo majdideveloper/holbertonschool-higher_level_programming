@@ -18,10 +18,7 @@ Prototypes for functions written in this project:
 | `3-to_json_string.py` | `def to_json_string(my_obj):` |
 | `4-from_json_string.py` | `def from_json_string(my_str):` |
 | `5-save_to_json_file.py` | `def save_to_json_file(my_obj, filename):` |
-| `8-load_from_json_file.py` | `def load_from_json_file(filename):` |
-| `10-class_to_json.py` | `def class_to_json(obj):` |
-| `14-pascal_triangle.py` | `def pascal_triangle(n):` |
-| `100-append_after.py` | `def append_after(filename="", search_string="", new_string=""):` |
+
 
 ## Tasks :page_with_curl:
 
