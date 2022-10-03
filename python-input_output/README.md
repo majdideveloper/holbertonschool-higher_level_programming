@@ -13,7 +13,7 @@ Prototypes for functions written in this project:
 | File        | Prototype               |
 | ----------- | ----------------------- |
 | `0-read_file.py` | `def read_file(filename=""):` |
-| `1-number_of_lines.py` | `def number_of_lines(filename=""):` |
+| `1-write_file` | `def write_file(filename="", text=""):` |
 | `2-read_lines.py` | `def read_lines(filename="", nb_lines=0):` |
 | `3-write_file.py` | `def write_file(filename="", text=""):` |
 | `4-append_write.py` | `def append_write(filename="", text=""):` |
@@ -30,3 +30,7 @@ Prototypes for functions written in this project:
 * **0. Read file**
   * [0-read_file.py](./0-read_file.py): Python function that prints the contents of a UTF8 text
   file to standard output.
+
+* **0. Write file**
+  * [1-write_file.py](./1-write_file.py): Python function that writes a string to a text file (UTF8) and returns the number of characters written
+
