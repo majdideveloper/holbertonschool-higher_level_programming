@@ -14,7 +14,7 @@ Prototypes for functions written in this project:
 | ----------- | ----------------------- |
 | `0-read_file.py` | `def read_file(filename=""):` |
 | `1-write_file` | `def write_file(filename="", text=""):` |
-| `2-read_lines.py` | `def read_lines(filename="", nb_lines=0):` |
+| `2-append_write.py` | `def append_write(filename="", text=""):` |
 | `3-write_file.py` | `def write_file(filename="", text=""):` |
 | `4-append_write.py` | `def append_write(filename="", text=""):` |
 | `5-to_json_string.py` | `def to_json_string(my_obj):` |
@@ -33,4 +33,8 @@ Prototypes for functions written in this project:
 
 * **0. Write file**
   * [1-write_file.py](./1-write_file.py): Python function that writes a string to a text file (UTF8) and returns the number of characters written
+
+* **0. Append write**
+  * [2-append_write.py](./2-append_write.py): Python function that appends a string at the end of a text file (UTF8) and returns the number of characters added.
+
 
