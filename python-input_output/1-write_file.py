@@ -19,7 +19,7 @@ def write_file(filename="", text=""):
     int
         the number of characters written
    """
-   with open(filename, 'r', encoding="utf-8") as f:
-       numberCara = f.write(text)
-       print(numberCara)
-   f.close()
+    with open(filename, 'w', encoding="utf-8") as f:
+        numberCara = f.write(text)
+    f.close()
+    return numberCara
