@@ -18,9 +18,7 @@ Prototypes for functions written in this project:
 | `3-to_json_string.py` | `def to_json_string(my_obj):` |
 | `4-from_json_string.py` | `def from_json_string(my_str):` |
 | `5-save_to_json_file.py` | `def save_to_json_file(my_obj, filename):` |
-
-
-## Tasks :page_with_curl:
+| `6-load_from_json_file.py` | `def load_from_json_file(filename):` | 
 
 * **0. Read file**
   * [0-read_file.py](./0-read_file.py): Python function that prints the contents of a UTF8 text
@@ -41,4 +39,5 @@ Prototypes for functions written in this project:
 * **5.Save To Json File**
   * [5-save_to_json_file.py](./5-save_to_json_file.py): Python function that writes an Object to a text file, using a JSON representation. 
 
-
+* **6.Load from Json File**
+  * [6-load_from_json_file.py](./6-load_from_json_file.py): Python function that creates an Object from a “JSON file”
