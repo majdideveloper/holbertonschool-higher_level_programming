@@ -18,7 +18,6 @@ def load_from_json_file(filename):
         object (Python data structure)
     """
     with open(filename, 'r', encoding="utf-8") as f:
-        read_data =  f.read()
+        read_data = f.read()
         objFromJson = json.loads(read_data)
         return objFromJson
-    
