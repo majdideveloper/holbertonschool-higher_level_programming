@@ -3,35 +3,31 @@ import unittest
 from models.base import Base
 
 class TestBase(unittest.TestCase):
-    def test_no_arg(self):
-        b1 = Base()
-        b2 = Base()
-        self.assertEqual(b1.id, b2.id - 1)
+    '''Tests the Base class.'''
 
-    def test_three_bases(self):
-        b1 = Base()
-        b2 = Base()
-        b3 = Base()
-        self.assertEqual(b1.id, b3.id - 2)
+    def setUp(self):
+        '''Imports module, instantiates class'''
+        Base._Base__nb_objects = 0
+        pass
 
-    def test_None_id(self):
-        b1 = Base(None)
-        b2 = Base(None)
-        self.assertEqual(b1.id, b2.id - 1)
+    def tearDown(self):
+        '''Cleans up after each test_method.'''
+        pass
 
-    def test_unique_id(self):
-        self.assertEqual(12, Base(12).id)
+    def test_A_nb_objects_private(self):
+        '''Tests if nb_objects is private class attribute.'''
+        self.assertTrue(hasattr(Base, "_Base__nb_objects"))
 
-    def test_nb_instances_after_unique_id(self):
-        b1 = Base()
-        b2 = Base(12)
-        b3 = Base()
-        self.assertEqual(b1.id, b3.id - 1)
+    def test_B_nb_objects_initialized(self):
+        '''Tests if nb_objects initializes to zero.'''
+        self.assertEqual(getattr(Base, "_Base__nb_objects"), 0)
 
-    def test_id_public(self):
-        b = Base(12)
-        b.id = 15
-        self.assertEqual(15, b.id) 
-   
+    def test_C_instantiation(self):
+        '''Tests Base() instantiation.'''
+        b = Base()
+        self.assertEqual(str(type(b)), "<class 'models.base.Base'>")
+        self.assertEqual(b.__dict__, {"id": 1})
+        self.assertEqual(b.id, 1) 
+
 if __name__ == '__main__':
     unittest.main()
