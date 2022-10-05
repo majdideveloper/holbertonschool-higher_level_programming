@@ -18,7 +18,11 @@ Prototypes for functions written in this project:
 | `3-to_json_string.py` | `def to_json_string(my_obj):` |
 | `4-from_json_string.py` | `def from_json_string(my_str):` |
 | `5-save_to_json_file.py` | `def save_to_json_file(my_obj, filename):` |
-| `6-load_from_json_file.py` | `def load_from_json_file(filename):` | 
+| `6-load_from_json_file.py` | `def load_from_json_file(filename):` |
+| `7-add_item.py` | `script that adds all arguments to a Python list, and then save them to a file` |
+| `8-class_to_json.py` | `def class_to_json(obj):` |
+| `9-student.py` | `class Student:` |
+
 
 * **0. Read file**
   * [0-read_file.py](./0-read_file.py): Python function that prints the contents of a UTF8 text
@@ -41,3 +45,20 @@ Prototypes for functions written in this project:
 
 * **6.Load from Json File**
   * [6-load_from_json_file.py](./6-load_from_json_file.py): Python function that creates an Object from a “JSON file”
+
+* **7. Load, add, save**
+  * [7-add_item.py](./7-add_item.py): Python script that stores all command line arguments to a
+  Python list saved in the file `add_item.json`.
+
+* **8. Class to JSON**
+  * [8-class_to_json.py](./8-class_to_json.py): Python function that returns the dictionary
+  description for simple Python data structures (lists, dictionaries, strings,
+  integers and booleans).
+
+* **9. Student to JSON**
+  * [9-student.py](./9-student.py): Python class `Student` that defines a student. Includes:
+    * Public instance attributes `first_name`, `last_name`, and `age`.
+    * Instantiation with `first_name`, `last_name`, and `age`:
+    `def __init__(self, first_name, last_name, age):`.
+    * Public method `def to_json(self):` that returns the dictionary
+    representation of a `Student` instance.
