@@ -66,7 +66,7 @@ Prototypes for functions written in this project:
 
 * **10. Student to JSON with filter**
   * [10-student.py](./10-student.py): Python class `Student` that defines a student. Builds on
-  [11-student.py](./9-student.py) with:
+  [9-student.py](./9-student.py) with:
     * Public method `def to_json(self, attrs=None):` that returns the
     dictionary representation of a `Student` instance.
     * If `attrs` is a list of strings, only the attributes listed are
