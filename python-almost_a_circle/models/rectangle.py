@@ -9,7 +9,6 @@ class Rectangle(Base):
     """class Rectangle that inherits from Base
     """
 
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """Function initialize the attributes of the class
 
@@ -17,13 +16,13 @@ class Rectangle(Base):
         ----------
         width : int
         width of Rectangle
-        height : int 
+        height : int
         height of Rectangle
         x : int
 
-        y : int 
+        y : int
 
-        id : int 
+        id : int
         id of Rectangle
         """
         id = super().__init__(id)
