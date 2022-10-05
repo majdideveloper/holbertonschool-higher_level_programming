@@ -8,6 +8,7 @@ class Base:
     """
 
     __nb_objects = 0
+
     def __init__(self, id=None):
         """Function that creates an Object from a “JSON file”
 
@@ -15,9 +16,8 @@ class Base:
         ----------
         id : int
         """
-        
         if id is None:
-            Base.__nb_objects += 1 
+            Base.__nb_objects += 1
             self.id = self.__nb_objects
         else:
             self.id = id
