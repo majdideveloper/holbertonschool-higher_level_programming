@@ -3,8 +3,12 @@ import unittest
 from models.base import Base
 
 class TestBase(unittest.TestCase):
+    def test_None_id(self):
+        b1 = Base(None)
+        b2 = Base(None)
+        self.assertEqual(b1.id, b2.id - 1)
 
-     def test_no_arg(self):
+    def test_no_arg(self):
         b1 = Base()
         b2 = Base()
         self.assertEqual(b1.id, b2.id - 1)
