@@ -100,7 +100,7 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
              self.id, self.__x, self.__y, self.__width, self.__height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Function that update Rectangle with value of args"""
         if len(args) != 0:
             for index in range(len(args)):
@@ -114,3 +114,15 @@ class Rectangle(Base):
                     self.__x = args[index]
                 elif index == 4:
                     self.__y = args[index]
+        else:
+            for k, v in kwargs.items():
+                if k == "id":
+                    self.id = v
+                elif k == "width":
+                    self.width = v
+                elif k == "height":
+                    self.height = v
+                elif k == "x":
+                    self.x = v
+                elif k == "y":
+                    self.y = v
