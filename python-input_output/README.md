@@ -22,6 +22,7 @@ Prototypes for functions written in this project:
 | `7-add_item.py` | `script that adds all arguments to a Python list, and then save them to a file` |
 | `8-class_to_json.py` | `def class_to_json(obj):` |
 | `9-student.py` | `class Student:` |
+| `10-student.py` | `class Student:` |
 
 
 * **0. Read file**
@@ -62,3 +63,11 @@ Prototypes for functions written in this project:
     `def __init__(self, first_name, last_name, age):`.
     * Public method `def to_json(self):` that returns the dictionary
     representation of a `Student` instance.
+
+* **10. Student to JSON with filter**
+  * [10-student.py](./10-student.py): Python class `Student` that defines a student. Builds on
+  [11-student.py](./9-student.py) with:
+    * Public method `def to_json(self, attrs=None):` that returns the
+    dictionary representation of a `Student` instance.
+    * If `attrs` is a list of strings, only the attributes listed are
+    represented in the dictionary.
