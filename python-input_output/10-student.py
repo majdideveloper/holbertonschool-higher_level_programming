@@ -37,11 +37,5 @@ class Student:
             newDict = {}
             for attr in attrs:
                 if attr in self.__dict__:
-                    newDict[attr]=self.__dict__[attr]
+                    newDict[attr] = self.__dict__[attr]
             return newDict
-
-
-
-
-
-             
