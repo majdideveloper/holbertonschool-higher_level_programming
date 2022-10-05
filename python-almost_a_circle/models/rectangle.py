@@ -96,5 +96,21 @@ class Rectangle(Base):
             print()
 
     def __str__(self):
+        """print the str of Rectangle"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
              self.id, self.__x, self.__y, self.__width, self.__height)
+
+    def update(self, *args):
+        """Function that update Rectangle with value of args"""
+        if len(args) != 0:
+            for index in range(len(args)):
+                if index == 0:
+                    self.id = args[index]
+                elif index == 1:
+                    self.__width = args[index]
+                elif index == 2:
+                    self.__height = args[index]
+                elif index == 3:
+                    self.__x = args[index]
+                elif index == 4:
+                    self.__y = args[index]
