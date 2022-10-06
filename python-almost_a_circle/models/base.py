@@ -25,6 +25,8 @@ class Base:
             self.id = id
 
     def to_json_string(list_dictionaries):
+        """update the class Base by adding the static method
+        def to_json_string"""
         if list_dictionaries is None:
             return "[]"
         else:
