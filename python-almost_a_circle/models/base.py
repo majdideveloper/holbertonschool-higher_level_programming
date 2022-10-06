@@ -40,9 +40,9 @@ class Base:
         """
         fileName = cls.__name__ + ".json"
         list_dic = []
-        with open (fileName, "w") as jsonFile:
+        with open(fileName, "w") as jsonFile:
             if list_objs is None:
-                jsonFile.write(list_dic)
+                jsonFile.write(cls.to_json_string(list_dic))
             else:
                 for obj in list_objs:
                     list_dic.append(obj.to_dictionary())
