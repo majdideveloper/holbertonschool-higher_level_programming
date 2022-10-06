@@ -24,6 +24,7 @@ class Base:
         else:
             self.id = id
 
+    @staticmethod
     def to_json_string(list_dictionaries):
         """update the class Base by adding the static method
         def to_json_string"""
