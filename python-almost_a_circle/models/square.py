@@ -40,7 +40,7 @@ class Square(Rectangle):
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
-        size = value
+        self.width = value
 
     def __str__(self):
         """print the str of Rectangle"""
