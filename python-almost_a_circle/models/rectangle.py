@@ -31,7 +31,6 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-
     @property
     def width(self):
         return self.__width
@@ -127,6 +126,8 @@ class Rectangle(Base):
                     self.x = v
                 elif k == "y":
                     self.y = v
+
     def to_dictionary(self):
         """funtion return dictionary of Rectangle"""
-        return {'x': self.x, 'y': self.y, 'id': self.id, 'height':self.height, 'width':self.width}
+        return {'x': self.x, 'y': self.y, 'id': self.id,
+                'height': self.height, 'width': self.width}
