@@ -1,2 +1,2 @@
--- all users
-SELECT CONCAT('SHOW GRANTS FOR ''',user,'''@''',host,''';') FROM mysql.user;
+-- script that lists all privileges of the MySQL users 
+SHOW GRANTS FOR 'root'@'localhost';
