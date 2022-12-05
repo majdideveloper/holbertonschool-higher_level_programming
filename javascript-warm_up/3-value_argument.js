@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 if (typeof process.argv[2] === 'undefined') {
   console.log('No argument');
 } else {
