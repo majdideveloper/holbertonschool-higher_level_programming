@@ -1,10 +1,6 @@
 #!/usr/bin/env node
-const process = require('process');
-const argNum = process.argv.length;
-if (argNum === 2) {
+if (typeof process.argv[2] === 'undefined') {
   console.log('No argument');
-} else if (argNum === 3) {
-  console.log('Argument found');
-} else if (argNum > 3) {
-  console.log('Arguments found');
+} else {
+  console.log(process.argv[2]);
 }
