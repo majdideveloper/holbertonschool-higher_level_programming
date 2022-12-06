@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
  function add (a, b) {
   if (isNaN(1) || isNaN(b)) {
     return NaN;
