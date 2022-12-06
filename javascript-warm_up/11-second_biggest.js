@@ -7,12 +7,12 @@ if (len <= 3) {
   let secondBiggest = Number.MIN_VALUE;
   for (let i = 2; i < len; i++) {
     if (process.argv[i] > max) {
-      max = process.argv[i];
+      max = parseInt(process.argv[i]);
     }
   }
   for (let j = 2; j < len; j++) {
-    if (max !== process.argv[j] && secondBiggest < max && process.argv[j] > secondBiggest) {
-      secondBiggest = process.argv[j];
+    if (secondBiggest < process.argv[j] && process.argv[j] < max) {
+      secondBiggest = parseInt(process.argv[j]);
     }
   }
 
