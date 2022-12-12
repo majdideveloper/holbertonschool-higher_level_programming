@@ -7,7 +7,7 @@ const file = process.argv[3];
 request(url, function (error, response, body) {
   if (error) console.error('error:', error);
   const data = body;
-  fs.writeFile(process.argv[3], data, 'utf8', (err, data) => {
+  fs.writeFile(file, data, 'utf8', (err, data) => {
     if (err) {
       console.error(err);
     }
