@@ -8,11 +8,12 @@ request(url, function (error, response, body) {
   const tasks = JSON.parse(body);
   const dick = {};
   for (const task of tasks) {
-    if (task.userId in dick) {
-      if (task.completed === true) dick[`${task.userId}`] += 1;
-    } else {
-      dick[`${task.userId}`] = 0;
+    if (task.completed && dick[task.userId] === undefined) {
+       dick[`${task.userId}`] = 1;
+    } else if(task.completed) {
+      dick[`${task.userId}`] += 1;
     }
+    
   }
   console.log(dick);
 });
