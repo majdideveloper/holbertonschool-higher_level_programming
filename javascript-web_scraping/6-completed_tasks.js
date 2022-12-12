@@ -9,11 +9,10 @@ request(url, function (error, response, body) {
   const dick = {};
   for (const task of tasks) {
     if (task.completed && dick[task.userId] === undefined) {
-       dick[`${task.userId}`] = 1;
-    } else if(task.completed) {
+      dick[`${task.userId}`] = 1;
+    } else if (task.completed) {
       dick[`${task.userId}`] += 1;
     }
-    
   }
   console.log(dick);
 });
