@@ -9,7 +9,7 @@ request(url, function (error, response, body) {
 
   let num = 0;
   for (const data of datas) {
-    if (data.characters.includes(id)) {
+    if (data.characters.includes('/18')) {
       num++;
     }
   }
