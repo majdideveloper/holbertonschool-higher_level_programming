@@ -9,9 +9,9 @@ request(url, function (error, response, body) {
 
   let num = 0;
   for (const data of datas) {
-    if (data.characters.includes('/18')) {
-      num++;
-    }
+    data.characters.map((cara) => {
+      if (cara.endsWith("/18/")) num++;
+    })
   }
-  console.log(num);
+  console.log(num);  
 });
